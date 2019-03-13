@@ -1,0 +1,29 @@
+{
+  "name": "andrewbreksa/mysql-escape-string-polyfill",
+  "version": "1.0.0",
+  "type": "library",
+  "license": "MIT",
+  "description": "A mysql_escape_string polyfill",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "authors": [
+    {
+      "name": "Andrew Breksa",
+      "email": "andrew@apwg.org"
+    }
+  ],
+  "require": {
+    "php": "^7"
+  },
+  "autoload": {
+    "files": [
+      "./src/functions.php"
+    ]
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0"
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}
