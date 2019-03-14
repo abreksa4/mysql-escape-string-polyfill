@@ -1,5 +1,6 @@
 mysql-escape-string-polyfill
 ----------------------------
+[![Build Status](https://travis-ci.org/abreksa4/mysql-escape-string-polyfill.svg?branch=master)](https://travis-ci.org/abreksa4/mysql-escape-string-polyfill)
 
 mysql-escape-string-polyfill is a very insecure `mysql_escape_string` implementation PHP 7.1/7.2 for a very limited use case 
 
