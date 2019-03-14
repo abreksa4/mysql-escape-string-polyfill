@@ -1,7 +1,7 @@
 mysql-escape-string-polyfill
 ----------------------------
 
-mysql-escape-string-polyfill is a very insecure `mysql_escape_string` implementation for a very limited use case. 
+mysql-escape-string-polyfill is a very insecure `mysql_escape_string` implementation for a very limited use case 
 
 Usage:
 
