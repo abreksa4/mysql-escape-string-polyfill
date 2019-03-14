@@ -38,9 +38,9 @@ class BasicStringReplacementTest extends \PHPUnit\Framework\TestCase
 
     public function testComplexString()
     {
-        $string = "%test\n\\";
+        $string = chr(26) . "%test\n\\";
         $s1 = mysql_escape_string($string);
-        $s2 = "\%test\\n\\\\";
+        $s2 = "\\z\%test\\n\\\\";
         $this->assertEquals($s2, $s1);
     }
 }
