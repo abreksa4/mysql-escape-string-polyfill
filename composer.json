@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "library",
   "license": "MIT",
-  "description": "A mysql_escape_string polyfill",
+  "description": "mysql-escape-string-polyfill is a very insecure `mysql_escape_string` implementation (PHP 7.1/7.2) for a very limited use case",
   "minimum-stability": "dev",
   "prefer-stable": true,
   "authors": [
