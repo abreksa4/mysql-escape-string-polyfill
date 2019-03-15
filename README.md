@@ -17,7 +17,7 @@ mysql-escape-string-polyfill is a very insecure `mysql_escape_string` implementa
         "\n" => "\\n",
         "\r" => "\\r",
         "\t" => "\\t",
-        chr(26) => "\\z",
+        chr(26) => "\\Z",
         chr(8) => "\\b",
         '"' => '\"',
         "'" => "\'",
