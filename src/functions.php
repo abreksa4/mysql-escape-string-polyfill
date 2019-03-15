@@ -17,7 +17,7 @@ if (!function_exists('mysql_escape_string')) {
             "\n" => "\\n",
             "\r" => "\\r",
             "\t" => "\\t",
-            chr(26) => "\\z",
+            chr(26) => "\\Z",
             chr(8) => "\\b",
             '"' => '\"',
             "'" => "\'",
