@@ -17,7 +17,7 @@ if (!function_exists('mysql_escape_string')) {
             "\n" => "\\n",
             "\r" => "\\r",
             "\t" => "\\t",
-            chr(26) => "\\z",
+            chr(26) => "\\Z",
             chr(8) => "\\b",
             '"' => '\"',
             "'" => "\'",
@@ -25,14 +25,7 @@ if (!function_exists('mysql_escape_string')) {
             "%" => "\%",
             '\\' => '\\\\'
         ];
-        $c_string = '';
-        foreach (str_split($unescaped_string) as $c) {
-            if (in_array($c, array_keys($replacementMap))) {
-                $c_string .= $replacementMap[$c];
-            } else {
-                $c_string .= $c;
-            }
-        }
-        return $c_string;
+
+        return \strtr($unescaped_string, $replacementMap);
     }
 }
