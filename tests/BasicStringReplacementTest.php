@@ -40,7 +40,7 @@ class BasicStringReplacementTest extends \PHPUnit\Framework\TestCase
     {
         $string = chr(26) . "%test\n\\";
         $s1 = mysql_escape_string($string);
-        $s2 = "\\z\%test\\n\\\\";
+        $s2 = "\\Z\%test\\n\\\\";
         $this->assertEquals($s2, $s1);
     }
 }
