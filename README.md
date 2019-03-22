@@ -6,7 +6,7 @@ mysql-escape-string-polyfill
 mysql-escape-string-polyfill is a very insecure `mysql_escape_string` implementation (PHP 7.1/7.2) for a very limited use case 
 
 # Usage
-1. Install this package via composer: `composer install andrewbreksa/mysql-escape-string-polyfill`
+1. Install this package via composer: `composer require andrewbreksa/mysql-escape-string-polyfill`
 2. Find all the places you use the `mysql_*` functions, and refactor your code to use PDO
 
 # Limitations
